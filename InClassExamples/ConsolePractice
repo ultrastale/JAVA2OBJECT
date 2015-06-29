@@ -1,0 +1,42 @@
+package console_example;
+
+import java.util.Scanner;
+
+// ctrl + shift + o to import
+
+
+public class ConsolePractice {
+
+	
+	public static void main(String[] args){
+		
+		//Scanner is used for console input
+		Scanner scanner = new Scanner(System.in);
+		
+		//step 1 prompt the user
+		System.out.println("Welcome to my social network!");
+		System.out.println("Please enter your age: ");
+		
+		
+		//step 2 read the value from the console
+		int age = scanner.nextInt();
+		scanner.nextLine();
+		
+		//prompt and read some other values
+		System.out.println("Enter enter your email: ");
+		String email = scanner.nextLine(); // empty the buffer
+		
+		
+		System.out.println("Are you in a relationship? ");
+		boolean relationship = scanner.nextBoolean();
+		scanner.nextLine(); // empty the buffer
+		
+		
+		//step 3 do something with the data you read
+		System.out.println("is this correct?");
+		System.out.println("Age: " + age);
+		System.out.println("Email: " + email);
+		System.out.println("You are in a relationship: " + relationship);
+	}
+	
+}
