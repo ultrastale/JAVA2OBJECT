@@ -1,0 +1,21 @@
+package examples;
+
+public class TestApple {
+
+	
+	public static void main(String[] args) {
+		
+		
+		// two apples with different constructors
+		Apples myApple = new Apples("green", false);
+		
+		Apples mySecondApple = new Apples();
+		
+		//print out the attributes of my apples
+		System.out.println("The color of my apple is: " + myApple.getColor());
+		System.out.println("The color of my apple is: " + mySecondApple.getColor());
+		
+	}
+	
+	
+}
