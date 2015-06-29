@@ -1,0 +1,36 @@
+package console_example;
+
+import java.util.Scanner;
+
+public class Division {
+
+	
+	public static void main(String[] args){
+		
+		//console scanner
+		Scanner scanner = new Scanner(System.in);
+		
+		//prompt then read in a value
+		System.out.print("Enter a number");
+		
+		
+		
+		boolean readAGoodValue = false;
+		
+		while(!readAGoodValue){
+			
+		}
+		
+		if(scanner.hasNextInt()){ // test for valid value
+			
+			int number = scanner.nextInt(); // read in valid value
+			System.out.println("Your number was: " + number);
+		} else {
+			System.out.println("enter a real number bruh");
+		}
+		
+		
+	}
+	
+	
+}
