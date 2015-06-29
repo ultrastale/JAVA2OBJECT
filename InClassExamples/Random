@@ -1,0 +1,69 @@
+package random;
+
+import java.util.Random;
+
+public class RandomNumbersPractice {
+	
+	public static void main(String[] args){
+		
+		Random myRandom = new Random();
+		
+		
+		//generate some random integers
+		
+		
+		for(int i = 1; i<=20; i++){
+			
+			/*
+			// 15 - 26  range of random numbers
+			int numberOfValuesInRange = 26 - 15 +1;
+			int  random = myRandom.nextInt(numberOfValuesInRange);
+			System.out.println(random +15); // add our low value here
+			*/
+			
+			// b-a+1 for values
+			
+			// 10-20
+			// 20-10+1 = 11
+			
+			/*
+			 * 0 +10 =10
+			 * 10 +10 =20
+			 * 2 +10 =12
+			 * 3 +10 = 13
+			 * 5 +10 = 15
+			 * 7 +10 = 17
+			 * 
+			 */
+			
+			int numberGenerated = nextInt(4, 30);
+			System.out.println(numberGenerated);
+			
+		}
+	}
+		
+		public static int nextInt(int low, int high){
+			
+			if (low > high){
+				// stop my program, or return a bogus value
+				
+				//we'll learn how to deal with bad inputs soon...(tm)
+			}
+			
+			
+			Random myRandom = new Random();
+			int numberOfValuesInRange = high - low + 1;
+			int randomNumber = myRandom.nextInt(numberOfValuesInRange);
+			return randomNumber + low;
+		}
+		
+}
+		
+
+// parent class can have nay number of child classes
+// a child class only has one parent class
+// child class inherits public fields and methods from its parent class
+// every class has a parent class (except for 1 class)
+
+// set of is-A relationships 
+		
