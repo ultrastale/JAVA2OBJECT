@@ -1,0 +1,31 @@
+package examples;
+
+public class TestTextBook 
+{
+
+	public static void main(String[] args)
+	{
+		// create a text book
+		TextBook myBook = new TextBook("Absolute Java", 1239, false);
+		
+		
+		// print to java console
+		
+		myBook.setTitle("arrafdlskfjsdflkj");
+		String bookTitle = myBook.getTitle();
+		System.out.println(bookTitle);
+		
+		if(myBook.getCover() == true){
+			
+			System.out.println("The book is hard-cover");
+		}
+		else {
+			
+			System.out.println("The book is soft-cover");
+		}
+		
+		
+		
+	}
+	
+}
