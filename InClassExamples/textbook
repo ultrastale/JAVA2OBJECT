@@ -1,0 +1,74 @@
+package examples;
+
+public class TextBook {
+
+	// fields 
+	private String title;
+	private int pages;
+	private boolean cover;  // true ==  hardcover, false == softcover
+
+
+	//constructors (no return type, same name as the class)
+	public TextBook(String newTitle, int newPages, boolean newCover)
+	{
+		setTitle(newTitle);
+		pages = newPages;
+		setCover(newCover);
+	}
+
+
+	//methods 
+	
+	
+
+	// getters (accessors)
+	public String getTitle() {
+		return title + " (# of pages: " + pages + ")";
+	}
+	
+	public boolean getCover() {
+		return cover;
+	}
+
+	public int getPages() {
+		return pages;
+	}
+	
+	
+	// setters (mutators)
+	public void setTitle(String title) {
+		
+		if(!title.equals("")){
+			this.title = title;
+		}
+			
+		
+	}
+
+	public void setCover(boolean cover) {
+		this.cover = cover;
+	}
+
+	public void setPages(int pages){
+		
+		if(pages > 0){
+			this.pages = pages;
+		}
+
+	}
+	
+	
+	//toString() method - returns a string representation of an object
+	
+	public String toString(){
+		String result = "Title: " + title +
+				" Pages: " + pages +
+				" Cover: " + cover;
+		return result;
+		
+		
+	}
+
+
+
+}
